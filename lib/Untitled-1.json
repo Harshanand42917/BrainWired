@@ -1,0 +1,36 @@
+{
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "Does that make sense so far?"
+    },
+    {
+      "role": "assistant",
+      "content": "not even light, can escape from it."
+    },
+    {
+      "role": "assistant",
+      "content": "A black hole is a region in space where gravity is so strong that nothing"
+    },
+    {
+      "role": "assistant",
+      "content": "Alright. Let's break it down."
+    },
+    {
+      "role": "user",
+      "content": "I'm listening."
+    },
+    {
+      "role": "assistant",
+      "content": "Today, we'll be talking about black holes."
+    },
+    {
+      "role": "assistant",
+      "content": "Let's start the session."
+    },
+    {
+      "role": "assistant",
+      "content": "Hello."
+    }
+  ]
+}

@@ -19,8 +19,8 @@ const NavbarItems = () => {
           href={href}
           key={label}
           className={cn(
-            "transition-colors hover:text-primary",
-            pathname === href && "text-primary font-semibold"
+            "transition-colors hover:text-orange-500",
+            pathname === href && "text-orange-500 font-semibold"
           )}>
           {label}
         </Link>

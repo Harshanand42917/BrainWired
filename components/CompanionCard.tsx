@@ -1,7 +1,9 @@
-"use-client";
-import React from "react";
+"use client";
+import { removeBookmark } from "@/lib/actions/companion.actions";
+import { addBookmark } from "@/lib/actions/companion.actions";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface CompanionCardProps {
   id: string;
@@ -22,11 +24,20 @@ const CompanionCard = ({
   color,
   bookmarked,
 }: CompanionCardProps) => {
+  const pathname = usePathname();
+  const Id = id;
+  const handleBookmark = async () => {
+    if (bookmarked) {
+      await removeBookmark(id, pathname);
+    } else {
+      await addBookmark(id, pathname);
+    }
+  };
   return (
     <article className="companion-card" style={{ backgroundColor: color }}>
       <div className="flex justify-between items-center">
         <div className="subject-badge">{subject}</div>
-        <button className="companion-bookmark">
+        <button className="companion-bookmark" onClick={handleBookmark}>
           <Image
             src={
               bookmarked ? "/icons/bookmark-filled.svg" : "/icons/bookmark.svg"
@@ -40,7 +51,7 @@ const CompanionCard = ({
 
       <h2 className="text-2xl font-bold">{name}</h2>
       <p className="text-sm">{topic}</p>
-      <div>
+      <div className="flex items-center gap-2">
         <Image
           src="/icons/clock.svg"
           alt="duration"
@@ -50,8 +61,8 @@ const CompanionCard = ({
         <p className="text-sm">{duration} minutes</p>
       </div>
 
-      <Link href={`/companions/${id}`} className="w-full">
-        <button className="btn-primary w-full justify-center">
+      <Link href={`/companions/${Id}`} className="w-full">
+        <button className="w-full bg-[#FF5C39] text-white py-2 rounded-lg font-semibold hover:bg-[#e14e2f] transition">
           Launch Lesson
         </button>
       </Link>
