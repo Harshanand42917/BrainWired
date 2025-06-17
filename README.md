@@ -73,3 +73,7 @@ STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
 SENTRY_DSN=your_sentry_dsn
 
 NEXT_PUBLIC_VAPI_KEY=your_vapi_key
+```
+
+---
+
