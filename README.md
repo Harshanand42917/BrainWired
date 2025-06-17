@@ -1,4 +1,4 @@
-# 🧠 BrainWired – AI-Powered LMS SaaS Platform
+#  BrainWired – AI-Powered LMS SaaS Platform
 
 Create a modern Learning Management System (LMS) from scratch with **Next.js**, **Supabase**, **Stripe**, and **Clerk**. Empower users with **AI voice tutors**, subscription-based access, real-time learning sessions, and an interactive, scalable teaching experience.
 
@@ -32,7 +32,7 @@ Create a modern Learning Management System (LMS) from scratch with **Next.js**, 
 
 ---
 
-## 🏁 Quick Start
+## Quick Start
 
 ### ✅ Prerequisites
 
