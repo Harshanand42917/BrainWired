@@ -1,6 +1,6 @@
 #  BrainWired – AI-Powered LMS SaaS Platform
 
-Create a modern Learning Management System (LMS) from scratch with **[Next.js](https://nextjs.org/)**, **[Supabase](https://supabase.com/)**, **[Stripe](https://stripe.com/)**, and **[Clerk](https://clerk.dev/)**. Empower users with **AI voice tutors**, subscription-based access, real-time learning sessions, and an interactive, scalable teaching experience.
+Create a modern Learning Management System (LMS) from scratch with **[Next.js](https://nextjs.org/)**, **[Supabase](https://supabase.com/)**, **[Clerk](https://clerk.dev/)**. Empower users with **AI voice tutors**, subscription-based access, real-time learning sessions, and an interactive, scalable teaching experience.
 
 ---
 
@@ -49,19 +49,26 @@ Make sure you have the following installed:
 
 ### 📦 Installation
 
+## Installation Guide
+
+### 1. Clone the Repository
+
 ```bash
- Clone the repository
- git clone https://github.com/your-username/brainwired-lms.git
- cd brainwired-lms
+git clone https://github.com/adrianhajdin/saas-app.git
+cd saas-app
+```
 
-Installation
-# Install the project dependencies
+### 2. Install Dependencies
+
+```bash
 npm install
+```
 
-Set Up Environment Variables
+### 3. Set Up Environment Variables
 
-Create a new file named .env in the root of your project and add the following content:
+Create a `.env.local` file in the root directory and add:
 
+```env
 # Sentry
 SENTRY_AUTH_TOKEN=
 
@@ -78,11 +85,17 @@ NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
 # Supabase
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
+```
 
-Running the Project
+### 4. Run the Development Server
 
+```bash
 npm run dev
-Open http://localhost:3000 in your browser to view the project.
+```
+
+Visit `http://localhost:3000` in your browser to view the app.
+
+---
 
 
 
