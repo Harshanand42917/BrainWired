@@ -86,6 +86,7 @@ NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
 ```
+Replace the placeholder values with your actual credentials. You can obtain these credentials by signing up on: Supabase, Clerk, Sentry, Vapi.
 
 ### 4. Run the Development Server
 
