@@ -50,30 +50,40 @@ Make sure you have the following installed:
 ### 📦 Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/adrianhajdin/saas-app.git
-cd saas-app
+ Clone the repository
+ git clone https://github.com/your-username/brainwired-lms.git
+ cd brainwired-lms
 
-# Install dependencies
+Installation
+# Install the project dependencies
 npm install
 
-# Create a .env.local file and add the following environment variables
+Set Up Environment Variables
 
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-CLERK_SECRET_KEY=your_clerk_secret_key
+Create a new file named .env in the root of your project and add the following content:
 
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+# Sentry
+SENTRY_AUTH_TOKEN=
 
-STRIPE_SECRET_KEY=your_stripe_secret_key
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
-STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
+# Vapi
+NEXT_PUBLIC_VAPI_WEB_TOKEN=
 
-SENTRY_DSN=your_sentry_dsn
+# Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
+NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
 
-NEXT_PUBLIC_VAPI_KEY=your_vapi_key
-```
+# Supabase
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
 
----
+Running the Project
+
+npm run dev
+Open http://localhost:3000 in your browser to view the project.
+
+
+
 
