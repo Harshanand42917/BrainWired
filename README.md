@@ -93,10 +93,11 @@ Replace the placeholder values with your actual credentials. You can obtain thes
 ```bash
 npm run dev
 ```
-
 Visit `http://localhost:3000` in your browser to view the app.
 
 ---
+
+![image](https://github.com/user-attachments/assets/0819f884-f848-4171-86a3-a650bb51865b)
 
 
 
