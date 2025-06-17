@@ -49,8 +49,6 @@ Make sure you have the following installed:
 
 ###  Installation
 
-## Installation Guide
-
 ### 1. Clone the Repository
 
 ```bash
@@ -96,8 +94,9 @@ npm run dev
 Visit `http://localhost:3000` in your browser to view the app.
 
 ---
+### Screenshot
+![image](https://github.com/user-attachments/assets/174c3c10-2a36-420f-895c-439135cfbaed)
 
-![image](https://github.com/user-attachments/assets/0819f884-f848-4171-86a3-a650bb51865b)
 
 
 
