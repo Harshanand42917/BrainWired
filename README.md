@@ -54,8 +54,8 @@ Make sure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/adrianhajdin/saas-app.git
-cd saas-app
+git clone https://github.com/Harshanand42917/BrainWired.git
+cd BrainWired
 ```
 
 ### 2. Install Dependencies
