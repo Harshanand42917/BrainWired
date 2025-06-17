@@ -35,7 +35,7 @@ Create a modern Learning Management System (LMS) from scratch with **[Next.js](h
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### ✅ Prerequisites
 
@@ -47,7 +47,7 @@ Make sure you have the following installed:
 
 ---
 
-### 📦 Installation
+###  Installation
 
 ## Installation Guide
 
