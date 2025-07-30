@@ -11,12 +11,14 @@ const Page = async () => {
   const companions = await getAllCompanions({ limit: 3 });
   const recentSessionsCompanions = await getRecentSessions(10);
 
+  console.log(companions);
+
   return (
     <main>
       <h1>Companion Dashboard</h1>
 
       <section className="home-section">
-        {companions.map((companion) => (
+        {companions?.map((companion) => (
           <CompanionCard
             key={companion.id}
             {...companion}

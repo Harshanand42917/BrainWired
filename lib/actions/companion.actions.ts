@@ -34,9 +34,9 @@ export const getAllCompanions = async ({ limit = 10, page = 1, subject, topic }:
 
     query = query.range((page - 1) * limit, page * limit - 1);
 
-    const { data: companions, error } = await query;
+    const { data: companions } = await query;
 
-    if(error) throw new Error(error.message);
+    // if(error) throw new Error(error.message);
 
     return companions;
 }
@@ -76,9 +76,9 @@ export const getRecentSessions = async (limit = 10) => {
         .order('created_at', { ascending: false })
         .limit(limit);
 
-    if(error) throw new Error(error.message);
+    // if(error) throw new Error(error.message);
 
-    return data.map(({ companions }) => companions);
+    return data?.map(({ companions }) => companions);
 }
 
 export const getUserSessions = async (userId: string, limit = 10) => {

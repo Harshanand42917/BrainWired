@@ -16,6 +16,7 @@ import CompanionsList from "@/components/CompanionsList";
 
 const Profile = async () => {
   const user = await currentUser();
+  console.log(user);
 
   if (!user) redirect("/sign-in");
 

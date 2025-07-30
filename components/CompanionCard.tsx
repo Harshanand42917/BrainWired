@@ -27,6 +27,7 @@ const CompanionCard = ({
   const pathname = usePathname();
   const Id = id;
   const handleBookmark = async () => {
+    console.log(bookmarked);
     if (bookmarked) {
       await removeBookmark(id, pathname);
     } else {
@@ -41,6 +42,7 @@ const CompanionCard = ({
           <Image
             src={
               bookmarked ? "/icons/bookmark-filled.svg" : "/icons/bookmark.svg"
+              // bookmarked ? "/icons/bookmark.svg" : "/icons/bookmark-filled.svg"
             }
             alt="bookmark"
             width={12.5}
