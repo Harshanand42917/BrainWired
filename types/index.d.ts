@@ -3,7 +3,8 @@
 //   email: string;
 //   image?: string;
 //   accountId: string;
-// };
+// }
+//
 
 enum Subject {
   maths = "maths",
